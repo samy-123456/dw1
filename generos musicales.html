@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MimusicWeb</title>
+    <h1> Generos musicales</h1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #121212; color: white; }
+        .navbar { background-color: #000000 !important; }
+        
+        /* Estilo para los cuadros de géneros */
+        .genre-card {
+            height: 150px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+            border: none;
+            text-decoration: none;
+            color: white;
+        }
+        .genre-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.pwArMmDWHwrh_89xIRDFrAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                     alt="Logo" width="40" class="me-2">
+                MIMUSIC
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="Inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="buscar.html">Buscar</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="generos.html">Géneros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="playlist.html">Playlists</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="fw-bold mb-4">Explorar todo</h2>
+        
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="genre-card bg-primary shadow">Pop</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="genre-card bg-danger shadow">Rock</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="genre-card bg-success shadow">Hip Hop</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="genre-card bg-warning text-dark shadow">Urbano</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="genre-card bg-info text-dark shadow">Jazz</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3" style="background-color: #E91E63; border-radius: 10px;">
+                <div class="genre-card shadow">Indie</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3" style="background-color: #673AB7; border-radius: 10px;">
+                <div class="genre-card shadow">Techno</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3" style="background-color: #FF5722; border-radius: 10px;">
+                <div class="genre-card shadow">Salsa</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
