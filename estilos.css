@@ -1,6 +1,25 @@
-body
+body {
+    background-color: beige;
+    
+}
 
-background-color:beige;
-body
+button {
+    background-color: #3AF043;
+    border: 1, 5px;
+    border-color:antiquewhite;
+    border-radius: 20px;
+    font-weight: bold;
+}
 
-button
+.btnbtnGris {
+    background-color: bisque;
+}
+
+.btnIsm {
+    background-color: blue;
+}
+
+button:hover {
+    background-color: #F001E7;
+    color: #9DF026
+}

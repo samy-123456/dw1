@@ -1,0 +1,106 @@
+/* Importar una fuente moderna desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para el botón "Atrás" */
+button:first-of-type {
+    align-self: flex-start;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+button:first-of-type:hover {
+    background-color: #eee;
+}
+
+/* Contenedor del formulario */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Etiquetas (Labels) */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Inputs de texto, email, tel, number y date */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 5px; /* Reducido para que el <small> quede cerca */
+    border: 1.5px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding no agrande el input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* Estilo para los mensajes pequeños <small> */
+small {
+    color: #666;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Botón de Enviar */
+button[type="submit"] {
+    width: 100%;
+    background-color: #4A90E2;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+/* Estilo para validación visual básica */
+input:invalid:not(:placeholder-shown) {
+    border-color: #ff4d4d;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+}

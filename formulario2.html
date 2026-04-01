@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario2</title>
+<link rel="stylesheet" href="./estilo formulario.css">
+</head>
+
+<body>
+    <button>atras</button>
+
+    <!--formularo de contacto-->
+    <button type="button" ondblclick="document.getElementById('fecha').innerHTML=new Date()">clik</button>
+    <p id='fecha'></p>
+    <p id="nuevo"></p>
+    <button type="button" onclick="cambiarColorFondo()">cambiarColorFondo</button>
+
+    <!--- formulario para calular el total--->
+    <form>
+        <label for="NombreProducto">NombreProducto</label>
+         <input type="text" id="tex" </input>
+        <br>
+
+        <label for="Precio">Precio:</label>
+        <input type="number" id="precio" </input>
+        <br>
+    
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" </input>
+        <br>
+        <button type="button" onclick="calcularTotal()"></button>
+    </form>
+    <!--formulario de datos -->
+    <form>
+
+        <label for="nombre">Nombre (solo letras):</label>
+        <input type="text" id="nombre" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
+            title="No se permiten números ni caracteres especiales" required><br>
+
+        <label for="apellido">Apellido (solo letras):</label>
+        <input type="text" id="nombre" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
+            title="No se permiten números ni caracteres especiales" required><br>
+        <label for="correo">Correo electrónico (Gmail):</label><br>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com"
+            pattern="[a-zA-Z0-9._%+-]+@gmail\.com$"
+            title="Por favor, ingresa una dirección de Gmail válida (ejemplo@gmail.com)" required>
+        <p><small>Ingresa tu cuenta de correo personal. Solo se aceptan direcciones de Gmail.</small></p><br>
+
+        <label for="numero celular"> numero celular (solo numeros ):</label>
+        <input type="tel" id="celular" name="celular" pattern="[0-9]+" inputmode="numeric"
+            title="Solo se permiten números. No ingrese letras ni espacios." required><br>
+
+
+        <label for="edad">Edad (solo números):</label><br>
+        <input type="number" id="edad" name="edad" min="0" max="120" inputmode="numeric" placeholder="0"
+            title="Ingresa una edad válida entre 0 y 120" required>
+        <p><small>Indica tu edad actual en años cumplidos.</small></p>
+
+        <br>
+
+        <label for="nacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="nacimiento" name="nacimiento" min="1900-01-01" max="2026-12-31" required>
+        <p><small>Selecciona tu fecha de nacimiento usando el calendario desplegable.</small></p> <br>
+
+
+
+        <button type="submit">Enviar</button>
+        
+            <script src="./main.js"></script>
+    </form>
+
+    </form>
+</body>
+
+</html>

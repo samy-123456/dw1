@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <button>atras</button>
+    <!--formularo de contacto-->
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="pasword"></input>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email"></input>
+        <br>
+        <label for="genero">Genero:</label>
+        <select name="genero">
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+        </select>
+
+        <br>
+        <input type="radio" id="HTML" name=" fav_lenguaje" value="HTML"> 
+        <label for="HTML">HTML</label> <br>
+        <input type="radio" id="css" name=" fav_lenguaje" value="CSS"> 
+        <label for="css">CSS</label> <br> 
+        <input type="radio" id="js" name=" fav_lenguaje" value="JS"> 
+        <label for="js">JS</label> <br>
+            <br>
+            <h1>checkbox</h1>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a biker</label> <br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+            <label for="vehicle2"> I have a car </label> <br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="boat">
+            <label for="vehicle3"> I have a boat </label> <br>
+            
+            <h1>Fecha</h1>
+            <input type="date" id="fecha" name="fecha"></input>
+            <!-- bton de enviar-->
+             <button class="bntSucess" onclick="alert('Su formulario due coerrecto')">Enviar</button>
+    </form>
+</body>
+</html>
