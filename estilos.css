@@ -1,12 +1,12 @@
 body {
     background-color: beige;
-    
+
 }
 
 button {
     background-color: #3AF043;
     border: 1, 5px;
-    border-color:antiquewhite;
+    border-color: antiquewhite;
     border-radius: 20px;
     font-weight: bold;
 }
@@ -22,4 +22,85 @@ button {
 button:hover {
     background-color: #F001E7;
     color: #9DF026
+}
+
+p {
+    text-align: center;
+    color: blueviolet;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: bold0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#cambiarColor {
+    color: blue;
+
+}
+
+/*retive posicion*/
+.flor {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.centro {
+
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 79%;/*se mueve vertical si el numero es grade 80 etc se va para abajo si se pone en negativo (-78,...) se va apara arriva  */
+    left:60%;/*se mueve horizontal (centro)si el numero es grade 80 etc se va hacia la derecha si se pone en negativo (-78,...) se va a la izquierda  */
+    transform: translate(-50%, -50%);
+      margin: 0 auto;
+      z-index:3;
+
+}
+
+/*absolute  position*/
+.petalo {
+    width: 40px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 50% 50% 0 0;/*hacerle redondo)*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    z-index: 2;
+
+
+}
+.tallo{
+     width: 30px;/*ancho*/
+    height: 100px;/* alto*/
+    background-color: green;
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    transform-origin: bottom center;
+}
+.petalo1 {
+    transform: rotate(0deg);
+
+}
+
+.petalo2 {
+    transform: rotate(72deg);
+}
+
+.petalo3 {
+    transform: rotate(144deg);
+}
+
+.petalo4 {
+    transform: rotate(216deg);
+}
+
+.petalo5 {
+    transform: rotate(288deg);
 }
