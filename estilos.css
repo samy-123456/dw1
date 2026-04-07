@@ -104,3 +104,210 @@ p {
 .petalo5 {
     transform: rotate(288deg);
 }
+/*flor2*/
+/* /retive posicion/ */
+.flor2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top:-0%;
+    left:-80%;
+    margin: 50 auto;
+}
+
+.centro2 {
+
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 79%;/*se mueve vertical si el numero es grade 80 etc se va para abajo si se pone en negativo (-78,...) se va apara arriva  */
+    left:60%;/*se mueve horizontal (centro)si el numero es grade 80 etc se va hacia la derecha si se pone en negativo (-78,...) se va a la izquierda  */
+    transform: translate(-50%, -50%);
+      margin: 0 auto;
+      z-index:3;
+
+}
+
+/* /absolute  position/ */
+/* /Parte 2/ */
+.petalo2 {
+    width: 40px;
+    height: 60px;
+    background-color: rgba(245, 4, 104, 0.979);
+    border-radius: 50% 50% 0 0;/*hacerle redondo)*/
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform-origin: bottom center;
+    z-index: 2;
+
+
+}
+.tallo2{
+     width: 20px;/*ancho*/
+    height: 100px;/* alto*/
+    background-color: green;
+    position: absolute;
+   top: 90%; /*vertical(- arriba)(+ abajo)/ */
+    left: 55%;/* /horizontal(-: izquierda), (+ derecha)/ */
+    transform-origin: bottom center;
+}
+.petalo12 {
+    transform: rotate(0deg);
+
+}
+
+.petalo22 {
+    transform: rotate(72deg);
+}
+
+.petalo32 {
+    transform: rotate(144deg);
+}
+
+.petalo42 {
+    transform: rotate(216deg);
+}
+
+.petalo52 {
+    transform: rotate(288deg);
+}
+
+/*flor3*/
+/* /retive posicion/ */
+.flor3 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.centro3 {
+
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 79%;/*se mueve vertical si el numero es grade 80 etc se va para abajo si se pone en negativo (-78,...) se va apara arriva  */
+    left:220%;/*se mueve horizontal (centro)si el numero es grade 80 etc se va hacia la derecha si se pone en negativo (-78,...) se va a la izquierda  */
+    transform: translate(-50%, -50%);
+      margin: 0 auto;
+      z-index:3;
+
+}
+/* /absolute  position/ */
+/* /Parte 3/ */
+.petalo3 {
+    width: 40px;
+    height: 60px;
+    background-color: rgb(250, 4, 4);
+    border-radius: 50% 50% 0 0;/*hacerle redondo)*/
+    position: absolute;
+    top: 50%;
+    left: 210%;
+    transform-origin: bottom center;
+    z-index: 2;
+
+
+}
+.tallo3{
+     width: 20px;/*ancho*/
+    height: 100px;/* alto*/
+    background-color: green;
+    position: absolute;
+    top: 90%; /*vertical*/
+    left: 215%; /*horizontal*/
+    transform-origin: bottom center;
+}
+.petalo13 {
+    transform: rotate(0deg);
+
+}
+
+.petalo23 {
+    transform: rotate(72deg);
+}
+
+.petalo33 {
+    transform: rotate(144deg);
+}
+
+.petalo43 {
+    transform: rotate(216deg);
+}
+
+.petalo53 {
+    transform: rotate(288deg);
+}
+
+
+/* /flor4/ */
+/* /retive posicion/ */
+.flor4 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.centro4 {
+
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: -47%;/*se mueve vertical si el numero es grade 80 etc se va para abajo si se pone en negativo (-78,...) se va apara arriva  */
+    left:297%;/*se mueve horizontal (centro)si el numero es grade 80 etc se va hacia la derecha si se pone en negativo (-78,...) se va a la izquierda  */
+    transform: translate(-50%, -50%);
+      margin: 0 auto;
+      z-index:3;
+
+}
+/* /absolute  position/ */
+/* /Parte 4/ */
+.petalo4 {
+    width: 40px;
+    height: 60px;
+    background-color: rgb(172, 4, 250);
+    border-radius: 50% 50% 0 0;/hacerle redondo)/
+    position: absolute;
+    top: -75%;
+    left: 286%;
+    transform-origin: bottom center;
+    z-index: 2;
+
+
+}
+.tallo4{
+     width: 20px;/ancho/
+    height: 112px;/* alto*/
+    background-color: green;
+    position: absolute;
+    top: -45%; /vertical/
+    left: 290%; /horizontal/
+    transform-origin: bottom center;
+}
+.petalo14 {
+    transform: rotate(0deg);
+
+}
+
+.petalo24 {
+    transform: rotate(72deg);
+}
+
+.petalo34 {
+    transform: rotate(144deg);
+}
+
+.petalo44 {
+    transform: rotate(216deg);
+}
+
+.petalo54 {
+    transform: rotate(288deg);
+}

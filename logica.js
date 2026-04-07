@@ -32,7 +32,7 @@ alert("su saldo actual es "+ saldo);
 
 }
 // SE CRERA UNA FUNCION QUE TRAE LO QUE EL USUSARIOP INGRESA MEDIANTE UN INPUT , SE LO HACE MEDIANTE document.getElementById
-//
+//document.getElementById: para traer la informacion del usuario q ingreso en el input .
 function mostrarMensaje(){
    let mensajeIngresado = document.getElementById("mensaje ingresado").value
    console.log(mensajeIngresado);
