@@ -1,28 +1,172 @@
+<!-- Define el tipo de documento como HTML5 -->
 <!DOCTYPE html>
+<!-- Define el idioma de la página como inglés -->
 <html lang="en">
+
+<!-- Inicia la sección head de la página (metadatos y referencias) -->
 <head>
+    <!-- Especifica la codificación de caracteres como UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Define la escala de visualización para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define el título que aparece en la pestaña del navegador -->
     <title>Document</title>
-    <link rel="stylesheet" href="contenedores.css"> 
+    <!-- Vincula el archivo CSS externo a la página -->
+    <link rel="stylesheet" href="contenedores.css">
+<!-- Cierra la sección head -->
 </head>
+
+<!-- Inicia el cuerpo de la página HTML -->
 <body>
-    <div class="container">
-    <div class="box">
-        <p> holis</p> 
-       
+    <!-- Contenedor principal que implementa el grid layout -->
+    <div class="contenedor">
+        <!-- Espacio en blanco para legibilidad -->
+        
+        <!-- HEADER: Logo y Navbar centrados en la parte superior -->
+        <div class="header">
+            <!-- Sección del Logo -->
+            <!-- Div que contiene el texto del logo -->
+            <div class="logo">Logo</div>
+            <!-- Barra de navegación con enlaces -->
+            <!-- Elemento nav que contiene los enlaces de navegación -->
+            <nav class="navbar">
+                <!-- Enlace a la página de inicio -->
+                <a href="#">Home</a>
+                <!-- Enlace a la página de acerca de -->
+                <a href="#">About</a>
+                <!-- Enlace a la página de servicios -->
+                <a href="#">Services</a>
+                <!-- Enlace a la página de contacto -->
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+        <!-- CONTENEDOR DEL CONTENIDO PRINCIPAL -->
+        <!-- Div que contiene menu, main y sidebar -->
+        <div class="content-wrapper">
+            <!-- MENU: Menú vertical en el lado izquierdo -->
+            <!-- Div que contiene el menú de navegación lateral -->
+            <div class="menu">
+                <!-- Encabezado del menú -->
+                <h3>Menu</h3>
+                <!-- Lista no ordenada del menú -->
+                <ul>
+                    <!-- Primer elemento del menú con enlace -->
+                    <li><a href="#">Menu Item 1</a></li>
+                    <!-- Segundo elemento del menú con enlace -->
+                    <li><a href="#">Menu Item 2</a></li>
+                    <!-- Tercer elemento del menú con enlace -->
+                    <li><a href="#">Menu Item 3</a></li>
+                    <!-- Cuarto elemento del menú con enlace -->
+                    <li><a href="#">Menu Item 4</a></li>
+                </ul>
+            </div>
+
+            <!-- SIDEBAR: Barra lateral derecha -->
+            <!-- Div que contiene la barra lateral con contenido adicional -->
+            <div class="sidebar">
+                <!-- Encabezado del sidebar -->
+                <h3>Sidebar</h3>
+                <!-- Párrafo de contenido en el sidebar -->
+                <p>Contenido de la barra lateral</p>
+            </div>
+
+            <!-- MAIN: Contenido principal del centro -->
+            <!-- Div que contiene todo el contenido principal -->
+            <div class="main">
+                <!-- Encabezado para la primera tabla -->
+                <h3>Tabla 1</h3>
+                <!-- Primera tabla con borde de 1px -->
+                <table border="1">
+                    <!-- Sección del encabezado de la tabla -->
+                    <thead>
+                        <!-- Fila con encabezados -->
+                        <tr>
+                            <!-- Primera celda del encabezado -->
+                            <td>Columna 1</td>
+                            <!-- Segunda celda del encabezado -->
+                            <td>Columna 2</td>
+                            <!-- Tercera celda del encabezado -->
+                            <td>Columna 3</td>
+                        </tr>
+                    </thead>
+                    <!-- Sección del cuerpo de la tabla -->
+                    <tbody>
+                        <!-- Primera fila de datos -->
+                        <tr>
+                            <!-- Primera celda con datos -->
+                            <td>Data 1</td>
+                            <!-- Segunda celda con datos -->
+                            <td>Data 2</td>
+                            <!-- Tercera celda con datos -->
+                            <td>Data 3</td>
+                        </tr>
+                        <!-- Segunda fila de datos -->
+                        <tr>
+                            <!-- Primera celda con datos -->
+                            <td>Data 1</td>
+                            <!-- Segunda celda con datos -->
+                            <td>Data 2</td>
+                            <!-- Tercera celda con datos -->
+                            <td>Data 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Salto de línea para separar las tablas -->
+                <br>
+                <!-- Encabezado para la segunda tabla -->
+                <h3>Tabla 2</h3>
+                <!-- Segunda tabla con borde de 1px -->
+                <table border="1">
+                    <!-- Sección del encabezado de la tabla -->
+                    <thead>
+                        <!-- Fila con encabezados -->
+                        <tr>
+                            <!-- Primera celda del encabezado -->
+                            <td>Columna 1</td>
+                            <!-- Segunda celda del encabezado -->
+                            <td>Columna 2</td>
+                            <!-- Tercera celda del encabezado -->
+                            <td>Columna 3</td>
+                        </tr>
+                    </thead>
+                    <!-- Sección del cuerpo de la tabla -->
+                    <tbody>
+                        <!-- Primera fila de datos -->
+                        <tr>
+                            <!-- Primera celda con datos -->
+                            <td>Data 1</td>
+                            <!-- Segunda celda con datos -->
+                            <td>Data 2</td>
+                            <!-- Tercera celda con datos -->
+                            <td>Data 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- FOOTER: Pie de página -->
+        <!-- Div que contiene el pie de página -->
+        <div class="footer">
+            <!-- Párrafo con información de derechos de autor -->
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+
     </div>
-</div>
- <div class="container-grid">
-            <div class="box-grid">1</div>
-            <div class="box-grid">2</div>
-            <div class="box-grid">3</div>
-            <div class="box-grid">4</div>
-            <div class="box-grid">5</div>
-            <div class="box-grid">6</div>
-            <div class="box-grid">7</div>
-            <div class="box-grid">8</div>
-            <div class="box-grid">9</div>
-        </div>  
+
+
+
+
+            </div>
+        </div>
+
+    
+    <div class="footer">
+        <p>&copy; 2026 my website . all rights reserved</p><!--creacion de nuestra pagina-->
+    </div>
+    </div>
 </body>
+
+<!-- Cierra el documento HTML -->
 </html>

@@ -1,36 +1,313 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* ============================================
+   ESTILOS GENERALES DEL BODY
+   ============================================ */
 
+/* Reset y estilos base del body */
+/* Selecciona el elemento body */
+body {
+    /* Elimina el margen predeterminado */
+    margin: 0;
+    /* Elimina el padding predeterminado */
+    padding: 0;
+    /* Define la fuente del documento */
+    font-family: Arial, sans-serif;
+    /* Color de fondo gris claro */
+    background-color: #f5f5f5;
 }
-.box{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(255, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    border-radius: 10px;
-}
 
+/* ============================================
+   CONTENEDOR PRINCIPAL (GRID LAYOUT)
+   ============================================ */
 
-.container-grid{
+/* Contenedor principal que usa CSS Grid */
+/* Selecciona la clase contenedor */
+.contenedor {
+    /* Activa el modelo de grid */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    /* Define 1 columna que ocupa todo el ancho */
+    grid-template-columns: 1fr;
+    /* Define 3 filas: header (automático), content-wrapper (automático), footer (automático) */
+    grid-template-rows: auto auto auto;
+    /* Espacio entre los elementos del grid */
+    gap: 0;
+    /* Altura mínima de la ventana completa */
+    min-height: 100vh;
+    /* Color de fondo para ver la separación */
+    background-color: #ddd;
 }
 
-.box-grid{
-   
-    height: 100px;
-    background-color: rgb(30, 255, 0);
+/* ============================================
+   HEADER (LOGO Y NAVBAR)
+   ============================================ */
+
+/* Sección del header que contiene logo y navbar */
+/* Selecciona la clase header */
+.header {
+    /* Ocupa todas las columnas disponibles */
+    grid-column: 1 / -1;
+    /* Usa flexbox para alinear el logo y navbar */
     display: flex;
+    /* Apila elementos en columna (logo arriba, navbar abajo) */
+    flex-direction: column;
+    /* Centra horizontalmente */
     justify-content: center;
+    /* Centra verticalmente */
     align-items: center;
-    font-size: 60px;
-    border-radius: 10px;
+    /* Fondo oscuro para el header */
+    background-color: #333;
+    /* Espaciado interno */
+    padding: 20px;
+    /* Espacio entre el logo y la navbar */
+    gap: 15px;
+    /* Borde negro para ver la segmentación */
+    border: 2px solid #000;
 }
 
+/* Estilos del logo */
+/* Selecciona la clase logo */
+.logo {
+    /* Tamaño grande para el logo */
+    font-size: 32px;
+    /* Texto en negrita */
+    font-weight: bold;
+    /* Color blanco */
+    color: #fff;
+    /* Centra el texto */
+    text-align: center;
+}
+
+/* Estilos de la barra de navegación */
+/* Selecciona la clase navbar */
+.navbar {
+    /* Usa flexbox para alineación horizontal */
+    display: flex;
+    /* Espacio entre los enlaces */
+    gap: 30px;
+    /* Centra los enlaces */
+    justify-content: center;
+}
+
+/* Estilos de los enlaces dentro de la navbar */
+/* Selecciona los elementos a dentro de navbar */
+.navbar a {
+    /* Color blanco del texto */
+    color: #fff;
+    /* Elimina el subrayado de los enlaces */
+    text-decoration: none;
+    /* Tamaño del texto */
+    font-size: 16px;
+    /* Espaciado interno del enlace */
+    padding: 8px 15px;
+    /* Esquinas redondeadas */
+    border-radius: 4px;
+    /* Transición suave al cambiar color */
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover (cuando pasas el mouse sobre un enlace) */
+/* Selecciona los enlaces navbar cuando el mouse está sobre ellos */
+.navbar a:hover {
+    /* Fondo gris oscuro al pasar el mouse */
+    background-color: #555;
+}
+
+/* ============================================
+   CONTENT-WRAPPER (CONTENIDO PRINCIPAL)
+   ============================================ */
+
+/* Contenedor del contenido principal que usa grid de 3 columnas */
+/* Selecciona la clase content-wrapper */
+.content-wrapper {
+    /* Activa el modelo de grid para este contenedor */
+    display: grid;
+    /* 3 columnas: menu (ancho fijo 200px), main (flexible), sidebar (ancho fijo 200px) */
+    grid-template-columns: 200px 1fr 200px;
+    /* Sin espacio entre los elementos */
+    gap: 0;
+    /* Ocupa todas las columnas del contenedor padre */
+    grid-column: 1 / -1;
+    /* Color de fondo para ver la separación */
+    background-color: #ddd;
+}
+
+/* ============================================
+   MENU (COLUMNA IZQUIERDA)
+   ============================================ */
+
+/* Estilos del menú lateral */
+/* Selecciona la clase menu */
+.menu {
+    /* Fondo blanco */
+    background-color: #fff;
+    /* Espaciado interno */
+    padding: 20px;
+    /* Borde negro para segmentación */
+    border: 2px solid #000;
+    /* Si el contenido es muy largo, agrega scrollbar */
+    overflow-y: auto;
+}
+
+/* Estilos del título dentro del menú */
+/* Selecciona elementos h3 dentro de menu */
+.menu h3 {
+    /* Elimina margen superior */
+    margin-top: 0;
+    /* Color gris oscuro */
+    color: #333;
+}
+
+/* Estilos de la lista no ordenada del menú */
+/* Selecciona elementos ul dentro de menu */
+.menu ul {
+    /* Elimina los puntos de la lista */
+    list-style: none;
+    /* Elimina padding predeterminado */
+    padding: 0;
+    /* Elimina margen predeterminado */
+    margin: 0;
+}
+
+/* Estilos de cada elemento de la lista */
+/* Selecciona elementos li dentro de menu */
+.menu li {
+    /* Espaciado vertical de los items */
+    padding: 10px 0;
+    /* Línea separadora entre items */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos de los enlaces dentro del menú */
+/* Selecciona elementos a dentro de menu */
+.menu a {
+    /* Elimina subrayado */
+    text-decoration: none;
+    /* Color azul para los enlaces */
+    color: #007bff;
+    /* Transición suave del color */
+    transition: color 0.3s;
+}
+
+/* Efecto hover de los enlaces del menú */
+/* Selecciona los enlaces menu cuando el mouse está sobre ellos */
+.menu a:hover {
+    /* Color azul más oscuro al pasar el mouse */
+    color: #0056b3;
+}
+
+/* ============================================
+   MAIN (CONTENIDO CENTRAL)
+   ============================================ */
+
+/* Estilos del contenido principal */
+/* Selecciona la clase main */
+.main {
+    /* Fondo blanco */
+    background-color: #fff;
+    /* Espaciado interno */
+    padding: 20px;
+    /* Borde negro para segmentación */
+    border: 2px solid #000;
+    /* Si el contenido es muy largo, agrega scrollbar */
+    overflow-y: auto;
+}
+
+/* Estilos de los títulos dentro del main */
+/* Selecciona elementos h3 dentro de main */
+.main h3 {
+    /* Color gris oscuro */
+    color: #333;
+    /* Elimina margen superior del primer título */
+    margin-top: 0;
+}
+
+/* Estilos de las tablas */
+/* Selecciona elementos table dentro de main */
+.main table {
+    /* Tabla ocupa todo el ancho disponible */
+    width: 100%;
+    /* Elimina espacios entre celdas */
+    border-collapse: collapse;
+    /* Espacio debajo de cada tabla */
+    margin-bottom: 20px;
+}
+
+/* Estilos de las celdas de la tabla */
+/* Selecciona elementos td dentro de las tablas de main */
+.main table td {
+    /* Espaciado interno de las celdas */
+    padding: 10px;
+    /* Centra el texto */
+    text-align: center;
+}
+
+/* Estilos del encabezado de la tabla */
+/* Selecciona elementos thead dentro de las tablas de main */
+.main table thead {
+    /* Fondo gris claro para el encabezado */
+    background-color: #f2f2f2;
+    /* Texto en negrita */
+    font-weight: bold;
+}
+
+/* Efecto alternado en las filas de la tabla (cebra) */
+/* Selecciona filas impares del tbody en las tablas de main */
+.main table tbody tr:nth-child(odd) {
+    /* Fondo muy claro para filas impares */
+    background-color: #f9f9f9;
+}
+
+/* ============================================
+   SIDEBAR (COLUMNA DERECHA)
+   ============================================ */
+
+/* Estilos de la barra lateral */
+/* Selecciona la clase sidebar */
+.sidebar {
+    /* Fondo blanco */
+    background-color: #fff;
+    /* Espaciado interno */
+    padding: 20px;
+    /* Borde negro para segmentación */
+    border: 2px solid #000;
+    /* Si el contenido es muy largo, agrega scrollbar */
+    overflow-y: auto;
+}
+
+/* Estilos del título dentro del sidebar */
+/* Selecciona elementos h3 dentro de sidebar */
+.sidebar h3 {
+    /* Elimina margen superior */
+    margin-top: 0;
+    /* Color gris oscuro */
+    color: #333;
+}
+
+/* ============================================
+   FOOTER (PIE DE PÁGINA)
+   ============================================ */
+
+/* Estilos del pie de página */
+/* Selecciona la clase footer */
+.footer {
+    /* Ocupa todas las columnas disponibles */
+    grid-column: 1 / -1;
+    /* Fondo oscuro */
+    background-color: #333;
+    /* Texto blanco */
+    color: #fff;
+    /* Centra el texto */
+    text-align: center;
+    /* Espaciado interno */
+    padding: 20px;
+    /* Borde negro para segmentación */
+    border: 2px solid #000;
+    /* Tamaño pequeño para el pie de página */
+    font-size: 14px;
+}
+
+/* Elimina margen del párrafo dentro del footer */
+/* Selecciona elementos p dentro de footer */
+.footer p {
+    /* Sin margen */
+    margin: 0;
+}
