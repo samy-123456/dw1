@@ -1,0 +1,12 @@
+#miImagen {
+    transition: transform 0.5s ease; /* Hace que el movimiento sea fluido */
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+  }
