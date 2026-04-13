@@ -1,0 +1,105 @@
+/* GRID LAYOUT - Estilos para un layout de grid con áreas definidas */
+
+/* Contenedor principal del grid layout */
+.conte {
+    /* Establece el contenedor como un grid */
+    display: grid;
+
+    /* Define las áreas del grid en una disposición de 4 filas y 3 columnas:
+       - Primera fila: header ocupa las 3 columnas
+       - Segunda fila: nav, main, sidebar
+       - Tercera fila: menu, content, sidebar
+       - Cuarta fila: footer ocupa las 3 columnas */
+    grid-template-areas:
+    "header header header"
+    "nav main sidebar"
+    "menu content sidebar"
+    "footer footer footer";
+
+    /* Define 3 columnas de igual ancho (1fr cada una) */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* Espacio entre las celdas del grid */
+    gap: 3px;
+
+    /* Color de fondo del contenedor */
+    background-color: lightblue;
+
+    /* Espaciado interno del contenedor */
+    padding: 5px;
+}
+
+/* Estilos para todos los divs dentro de .content */
+.content div {
+    /* Color de fondo blanco para los elementos del grid */
+    background-color: white;
+
+    /* Espaciado interno de 20px */
+    padding: 20px;
+}
+
+/* Estilos para el header */
+.content .header {
+    /* Asigna el área 'header' al elemento */
+    grid-area: header;
+
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+/* Estilos para la navegación */
+.content .nav {
+    /* Asigna el área 'nav' al elemento */
+    grid-area: nav;
+
+    /* Centra el texto horizontalmente */
+    text-align: center;
+
+    /* Color de fondo amarillo claro */
+    background-color: rgb(234, 252, 133);
+}
+
+/* Estilos para el menú */
+.content .menu {
+    /* Asigna el área 'menu' al elemento */
+    grid-area: menu;
+
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+/* Estilos para la barra lateral */
+.content .sidebar {
+    /* Asigna el área 'sidebar' al elemento */
+    grid-area: sidebar;
+
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+/* Estilos para el contenido principal */
+.content .main {
+    /* Asigna el área 'main' al elemento */
+    grid-area: main;
+
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+/* Estilos para el contenido adicional */
+.content .content {
+    /* Asigna el área 'content' al elemento */
+    grid-area: content;
+
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+/* Estilos para el footer */
+.content .footer {
+    /* Asigna el área 'footer' al elemento */
+    grid-area: footer;
+
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}

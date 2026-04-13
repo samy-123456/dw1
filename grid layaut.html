@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid layout clase.css">
+</head>
+<!-- Este h1 está fuera del contenedor de grid, sirviendo como título -->
+<center><h1>Grid layout</h1></center>
+    <!-- .conte es probablemente el contenedor principal de grid en CSS, definiendo la estructura general de grid -->
+    <div class="conte">
+        <!-- .header es un elemento de grid, probablemente abarcando el ancho completo en la parte superior -->
+        <div class="header">
+            <!-- .logo y .nav son sub-elementos dentro del elemento de grid header -->
+            <div class="logo">Logo</div>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <!-- .content es un elemento de grid, conteniendo sub-grid o elementos flex para el layout -->
+        <div class="content">
+            <!-- .menu está centrado y probablemente es un elemento de grid o flex dentro de .content -->
+            <center><div class="menu">
+                <ul>
+                    <li><a href="#">Menu Item 1</a></li>
+                    <li><a href="#">Menu Item 2</a></li>
+                    <li><a href="#">Menu Item 3</a></li>
+                    <li><a href="#">Menu Item 4</a></li>
+                </ul>
+            </div></center>
+            <!-- .sidebar es un elemento de grid, probablemente posicionado en una columna dentro de .content -->
+            <div class="sidebar">Sidebar</div>
+            <!-- .main es un elemento de grid, probablemente el área de contenido principal abarcando múltiples columnas -->
+            <div class="main">
+                <!-- La tabla dentro de .main está centrada, no directamente relacionada con grid pero contenida dentro del elemento de grid main -->
+                <center><table border="1">
+                    <thead>
+                        <tr>
+                            <td>/</td>
+                            <td>Column1</td>
+                            <td>Column2</td>
+                            <td>Column3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Data2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Data3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                         <tr>
+                            <td>Data4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+
+                    </tbody>
+                </table></center>
+            </div>
+        </div>
+    </div>
+    
+ <!-- .footer está fuera de .conte, posiblemente otro contenedor de grid o simplemente un elemento de bloque -->
+ <center><div class="footer">
+        <p>&copy; 2026 My Website. All rights reserved</p>
+    </div></center>
+   
+</body>
+
+</html>
