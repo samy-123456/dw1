@@ -17,6 +17,27 @@
     <script src="arcade.js"></script>
     <h2 id="mensajeFinal">Esperando tu datos</h2>
     <h2 id="mensajePreferencial"></h2>
+    
+     <hr style="margin: 30px 0;">
+     
+     <div class="maquina-juego">
+        <h2>Mini juego adivina el numero</h2>
+        <p>seleccione una dificultad</p>
+        <select id="dificultad" onchange="iniciarJuego()">
+            <option value="0">--elige una opcion--</option>
+            <option value="10">Facil(1-10)</option>
+            <option value="50">Medio(1-50)</option>
+            <option value="100">Dificil(1-100)</option>
+        </select>
+        <br><br>
+        <div id="zonaAdivina">
+            <p id="pistaJuego">Estoy pensando un numero..¿cual es?</p>
+            <input type="number" id="numeroInterno" placeholder="ingresa tu numero">
+            <button onclick="adivinaNumero()">Adivinar</button>
+            <h3 id="intentosRestantesTexto"></h3>
+        </div>
+     </div>
+
 </body>
 
 </html>
